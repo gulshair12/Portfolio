@@ -44,12 +44,12 @@ A modern, responsive portfolio site built with React, TypeScript, Vite, Tailwind
 
 ### Scripts
 
-| Command           | Description                    |
-| ----------------- | ------------------------------ |
-| `npm run dev`     | Start dev server with HMR      |
-| `npm run build`   | Type-check and build for prod  |
+| Command           | Description                     |
+| ----------------- | ------------------------------- |
+| `npm run dev`     | Start dev server with HMR       |
+| `npm run build`   | Type-check and build for prod   |
 | `npm run preview` | Serve the `dist/` build locally |
-| `npm run lint`    | Run ESLint                     |
+| `npm run lint`    | Run ESLint                      |
 
 ---
 
@@ -145,6 +145,6 @@ For explicit permission beyond this README, open an issue in the repository.
 
 ## Contact
 
-- **Portfolio**: [Live site URL]
+- **Portfolio**: [app.netlify.com](https://gulshair12.netlify.app/)
 - **GitHub**: [github.com/gulshair12](https://github.com/gulshair12)
 - **LinkedIn**: [linkedin.com/in/gulshair12](https://www.linkedin.com/in/gulshair12/)
