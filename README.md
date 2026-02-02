@@ -145,6 +145,6 @@ For explicit permission beyond this README, open an issue in the repository.
 
 ## Contact
 
-- **Portfolio**: [app.netlify.com](https://gulshair12.netlify.app/)
+- **Portfolio**: [porfolio/gulshair12](https://gulshair12.netlify.app/)
 - **GitHub**: [github.com/gulshair12](https://github.com/gulshair12)
 - **LinkedIn**: [linkedin.com/in/gulshair12](https://www.linkedin.com/in/gulshair12/)
