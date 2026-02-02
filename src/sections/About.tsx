@@ -103,7 +103,7 @@ const About = () => {
 
             <motion.div variants={itemVariants}>
               <a
-                href="/Gulshair-Fontend.pdf"
+                href="/Gulshair-Frontend.pdf"
                 className="btn-secondary inline-flex items-center gap-2 group"
                 download="Gulshair-Frontend-Resume.pdf"
               >
