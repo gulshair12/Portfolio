@@ -6,7 +6,7 @@ import About from './sections/About';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Experience from './sections/Experience';
-import TechStack from './sections/TechStack';
+import EngineeringPrinciples from './sections/EngineeringPrinciples';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
@@ -29,7 +29,7 @@ function App() {
         <Skills />
         <Projects />
         <Experience />
-        <TechStack />
+        <EngineeringPrinciples />
         <Contact />
       </main>
       <Footer />

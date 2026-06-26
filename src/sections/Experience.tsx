@@ -15,46 +15,56 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     id: 1,
-    role: 'Senior Frontend Engineer',
+    role: 'Frontend Engineer',
     company: 'Rigel AI',
     location: 'Lahore, Pakistan',
     period: '2025 — Present',
     type: 'full-time',
     highlights: [
-      'Architected and delivered complex UIs using modern frameworks while ensuring exceptional user experience.',
-      'Collaborated cross-functionally to implement robust, maintainable, and reusable frontend components.',
-      'Drove performance optimization, resulting in faster load times and improved Core Web Vitals scores.',
+      'Leading frontend development across multiple SaaS applications using React.js, Next.js, and TypeScript with ownership of architecture and implementation workflows.',
+
+      'Built scalable frontend systems focused on reusable component architecture, complex state management, authentication workflows, and performance optimization.',
+
+      'Collaborated closely with product, backend, and design teams while leveraging AI-assisted development workflows to accelerate delivery and maintain engineering quality.',
     ],
+
   },
+
   {
     id: 2,
-    role: ' Frontend Developer',
+    role: 'Frontend Engineer',
     company: 'Createex Inc.',
     location: 'Lahore, Pakistan',
     period: '2023 — 2025',
     type: 'full-time',
     highlights: [
-      'Developed user interfaces for a CMS used by thousands of daily users.',
-      'Worked with designers and backend engineers to deliver new features on time.',
-      'Enhanced site responsiveness and ensured accessibility compliance.',
+      'Developed and maintained scalable React-based CMS platforms and business applications used by thousands of daily users.',
+
+      'Built reusable frontend systems, integrated REST APIs, and implemented responsive user interfaces focused on maintainability and performance.',
+
+      'Worked independently across frontend implementation workflows while collaborating with cross-functional teams to deliver production-ready features.',
     ],
+
   },
+
   {
     id: 3,
-    role: 'Junior Frontend Developer',
+    role: 'Frontend Developer Intern → Junior Frontend Developer',
     company: 'Enigmatix (Pvt) Ltd',
     location: 'Bahawalpur, Pakistan',
     period: '2022 — 2023',
     type: 'full-time',
+
     highlights: [
-      'Completed a competitive internship program, mastering the fundamentals of web development.',
-      'Assisted in building and maintaining responsive user interfaces using modern JavaScript frameworks.',
-      'Took ownership of small features from design to deployment under senior guidance.',
-      'Debugged and fixed UI/UX issues across major browsers to improve quality.',
+      'Completed a frontend development internship focused on React.js, React Native, responsive web applications, and collaborative engineering workflows.',
+
+      'Implemented UI components, resolved cross-browser issues, and contributed to frontend feature delivery across multiple production projects.',
+
+      'Gained hands-on experience with debugging practices, frontend architecture fundamentals, and team-oriented development environments.',
     ],
   },
-
 ];
+
 
 const Experience = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -123,13 +133,12 @@ const Experience = () => {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] as const }}
           className="text-center mb-16"
         >
-          <span className="section-label mb-4 block">Experience</span>
+          <span className="section-label mb-4 block">Professional Experience</span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-portfolio-text mb-6">
-            Career <span className="text-gradient">Journey</span>
+            Building <span className="text-gradient">Production Frontend Systems</span>
           </h2>
-          <p className="text-lg text-portfolio-muted max-w-2xl mx-auto">
-            A timeline of growth, from junior developer to lead engineer,
-            with each role building upon the last.
+          <p className="text-lg text-portfolio-muted max-w-4xl mx-auto">
+            Experience building scalable frontend applications, SaaS platforms, workflow-driven systems, and modern web interfaces across collaborative product environments
           </p>
         </motion.div>
 
@@ -231,7 +240,7 @@ const Experience = () => {
           className="mt-16 grid grid-cols-3 gap-6"
         >
           {[
-            { value: '3+', label: 'Years' },
+            { value: '4+', label: 'Years' },
             { value: '3', label: 'Companies' },
             { value: '10+', label: 'Projects' },
           ].map((stat) => (

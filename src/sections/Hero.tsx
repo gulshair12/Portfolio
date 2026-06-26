@@ -83,7 +83,7 @@ const Hero = () => {
   };
 
   const name = "Muhammad Gulshair";
-  const role = "Senior Frontend Engineer";
+  const role = "Frontend Engineer";
 
   return (
     <section
@@ -247,13 +247,15 @@ const Hero = () => {
 
           {/* Tagline */}
           <motion.p
-            className="text-base sm:text-lg md:text-xl text-portfolio-muted max-w-2xl mx-auto mb-12 leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-portfolio-muted max-w-4xl mx-auto mb-12 leading-relaxed"
             initial={{ opacity: 0, filter: 'blur(10px)' }}
             animate={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.7, delay: 1, ease: [0.4, 0, 0.2, 1] as const }}
           >
-            Crafting pixel-perfect, high-performance web experiences with modern technologies.
-            I architect scalable solutions that delight users and drive business impact.
+            Frontend Engineer specializing in scalable React.js and Next.js applications, modern frontend architecture, and production-ready user experiences.
+            <br />
+            <br />
+            Currently building complex SaaS platforms, workflow-driven systems, and performant frontend applications using TypeScript and AI-assisted development workflows.
           </motion.p>
 
           {/* CTA Buttons */}

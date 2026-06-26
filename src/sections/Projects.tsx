@@ -15,76 +15,153 @@ const projects: Project[] = [
   {
     id: 1,
     title: 'Shay Better Coaching',
-    description: 'Coaching platform with role-based access, payments, and an all-in-one workflow toolkit.',
-    techStack: ['Next.js', 'TypeScript', 'Node.js', 'Material UI', 'Redux-Toolkit', 'Stripe', 'Prisma', 'PostgreSQL'],
+    description:
+      'Built a production-scale coaching SaaS platform supporting multi-role workflows, payments, scheduling systems, complex onboarding flows, and large-scale form management with scalable frontend architecture.',
+    techStack: [
+      'Next.js',
+      'TypeScript',
+      'Node.js',
+      'Redux Toolkit',
+      'Material UI',
+      'Stripe',
+      'Prisma',
+      'PostgreSQL'
+    ],
     image: '/shay.jpg',
     link: 'https://portal.shayyourlovediva.com',
   },
+
   {
     id: 2,
     title: 'Service Estimate',
-    description: 'Plumbing platform for real-time estimates and booking, with CMS and doorstep service.',
-    techStack: ['Next.js', 'TypeScript', 'Node.js', 'Material UI', 'Redux-Toolkit', "React Flow", "Firebase", "Vapi"],
+    description:
+      'Developed a workflow-driven plumbing service platform featuring dynamic estimate generation, booking systems, CMS management, React Flow automation workflows, and scalable multi-step frontend systems.',
+    techStack: [
+      'Next.js',
+      'TypeScript',
+      'Node.js',
+      'Redux Toolkit',
+      'React Flow',
+      'Firebase',
+      'Vapi'
+    ],
     image: '/service.png',
     link: 'https://www.service-estimate.com',
   },
+
   {
     id: 3,
     title: 'PERMITDESK',
-    description: 'Streamlined construction permit applications and approvals for multiple US cities.',
-    techStack: ['Next.js', 'TypeScript', 'Node.js', 'Material UI', 'Redux-Toolkit', "PostgresSQL", 'OpenAI'],
+    description:
+      'Contributed to a permit management platform streamlining construction permit workflows, approval systems, and administrative operations across multiple US municipalities.',
+    techStack: [
+      'Next.js',
+      'TypeScript',
+      'Node.js',
+      'Material UI',
+      'Redux Toolkit',
+      'PostgreSQL',
+      'OpenAI'
+    ],
     image: '/permit.jpg',
     link: 'https://www.permitdesk.com',
   },
+
   {
     id: 4,
     title: 'M. Azam Electronics',
-    description: 'Product catalog, inquiry forms, and blog for printers and electronics retailers.',
-    techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Shadcn/ui', "Framer Motion", "Supabase"],
+    description:
+      'Designed and developed a modern electronics platform with CMS-driven product management, SEO-focused architecture, inquiry systems, and performance-optimized frontend experiences.',
+    techStack: [
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'Shadcn/ui',
+      'Framer Motion',
+      'Supabase'
+    ],
     image: '/azam.webp',
     link: 'https://mazamelectronics.com',
   },
+
   {
     id: 5,
     title: 'Sleek Assured Removal',
-    description: 'Removal and relocation services with quote system and moving-tips blog.',
-    techStack: ['React.js', 'JavaScript', 'Tailwind CSS', 'Node.js',],
+    description:
+      'Built a responsive relocation services platform with quote management workflows, conversion-focused landing pages, and scalable frontend integrations.',
+    techStack: [
+      'React.js',
+      'JavaScript',
+      'Tailwind CSS',
+      'Node.js'
+    ],
     image: '/Sleek_Logo.svg',
     link: 'https://charming-meringue-a79e97.netlify.app',
   },
+
   {
     id: 6,
     title: 'Inves Learning Ltd',
-    description: 'E-learning platform with 300+ courses and straightforward enrollment.',
-    techStack: ['React.js', 'JavaScript', 'Tailwind CSS', 'Node.js',],
+    description:
+      'Developed an e-learning platform supporting course management, enrollment workflows, and responsive educational user experiences for online learners.',
+    techStack: [
+      'React.js',
+      'JavaScript',
+      'Tailwind CSS',
+      'Node.js'
+    ],
     image: '/invest.svg',
     link: 'https://investlearningltd.com/',
   },
+
   {
     id: 7,
     title: 'IQ Test',
-    description: 'Online IQ assessment with instant scores and results for individuals and teams.',
-    techStack: ['React.js', 'JavaScript', 'Tailwind CSS', 'Node.js',],
+    description:
+      'Created an online assessment platform with dynamic testing workflows, instant score generation, and responsive multi-user assessment experiences.',
+    techStack: [
+      'React.js',
+      'JavaScript',
+      'Tailwind CSS',
+      'Node.js'
+    ],
     image: '/iq.png',
     link: 'https://sensational-palmier-cacff9.netlify.app/',
   },
+
   {
     id: 8,
     title: 'Premier Consulting',
-    description: 'Tax consulting and business advisory site with contact and quote requests.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', "Sass"],
+    description:
+      'Built a business consulting platform focused on service presentation, lead generation workflows, and responsive frontend user experiences.',
+    techStack: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Bootstrap',
+      'Sass'
+    ],
     image: '/premier.jpeg',
     link: 'https://aquamarine-marzipan-62a0c5.netlify.app/',
   },
+
   {
     id: 9,
     title: 'Mind Changer',
-    description: 'Document clearing and business setup services for Dubai and the UAE.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', "Sass"],
+    description:
+      'Developed a business setup and document services platform for UAE-based operations with responsive frontend interfaces and conversion-focused workflows.',
+    techStack: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Bootstrap',
+      'Sass'
+    ],
     image: '/mind.png',
     link: 'https://mindchanger.netlify.app/',
   }
 ];
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -198,13 +275,12 @@ const Projects = () => {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] as const }}
           className="text-center mb-12"
         >
-          <span className="section-label mb-4 block">Portfolio Highlights</span>
+          <span className="section-label mb-4 block">Production Work</span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-portfolio-text mb-6 tracking-tight">
-            <span className="text-gradient">Noteworthy</span> Projects
+            <span className="text-gradient">Selected</span> Frontend Systems
           </h2>
-          <p className="text-lg text-portfolio-muted max-w-2xl mx-auto">
-            Explore a handpicked collection of my projects–ranging from advanced frontend interfaces to scalable web platforms–
-            reflecting my passion for building intuitive and robust user experiences.
+          <p className="text-lg text-portfolio-muted max-w-4xl mx-auto">
+            A selection of production applications focused on scalable frontend architecture, workflow-driven systems, SaaS platforms, and performance-oriented user experiences.
           </p>
         </motion.div>
 

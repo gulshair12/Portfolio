@@ -30,7 +30,7 @@ const About = () => {
   };
 
   const stats = [
-    { icon: Code2, value: '3+', label: 'Years Experience' },
+    { icon: Code2, value: '4+', label: 'Years Experience' },
     { icon: Rocket, value: '10+', label: 'Projects Delivered' },
   ];
 
@@ -75,37 +75,30 @@ const About = () => {
             <motion.div variants={itemVariants}>
               <span className="section-label mb-4 block">About Me</span>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-portfolio-text leading-tight">
-                Building the{' '}
-                <span className="text-gradient">Modern Web</span>
+                Building Scalable{' '}
+                <span className="text-gradient">Frontend Systems</span>
               </h2>
             </motion.div>
 
             <div className="space-y-6 text-portfolio-muted leading-relaxed">
               <motion.p variants={itemVariants} className="text-lg">
-                I'm a <strong className="text-portfolio-text">Senior Frontend Engineer</strong> with 3+ years of experience
-                crafting scalable, performant web applications. I specialize in React ecosystems,
-                design systems, and creating delightful user experiences that leave lasting impressions.
+                I'm a <strong className="text-portfolio-text">Frontend Engineer</strong> with 4 years of experience building scalable web applications using React.js, Next.js, and TypeScript. My experience includes SaaS platforms, CMS systems, workflow-driven applications, and complex frontend architectures focused on performance and maintainability.
               </motion.p>
 
               <motion.p variants={itemVariants} className="text-lg">
-                My approach combines <strong className="text-portfolio-text">technical excellence</strong> with
-                product thinking. I don't just write code—I solve problems, mentor teams, and architect
-                solutions that stand the test of time. Every line I write considers maintainability,
-                performance, and user impact.
+                I specialize in frontend architecture, reusable component systems, advanced state management, authentication workflows, and building responsive user experiences for production-scale applications. I enjoy solving complex UI problems while keeping systems maintainable and scalable as products grow.
               </motion.p>
 
               <motion.p variants={itemVariants} className="text-lg">
-                When I'm not coding, you'll find me exploring new technologies, contributing to open source,
-                or sharing knowledge with the developer community. I believe in continuous learning and
-                the power of collaborative innovation.
+                I actively explore modern engineering workflows including AI-assisted development, frontend system design, and performance optimization to improve development efficiency and deliver high-quality user experiences across modern web applications.
               </motion.p>
             </div>
 
             <motion.div variants={itemVariants}>
               <a
-                href="/Gulshair-Frontend.pdf"
+                href="/Gulshair_Frontend_Resume.pdf"
                 className="btn-secondary inline-flex items-center gap-2 group"
-                download="Gulshair-Frontend-Resume.pdf"
+                download="Gulshair_Frontend_Resume.pdf"
               >
                 <Download className="w-4 h-4 transition-transform group-hover:-translate-y-0.5" />
                 Download Resume

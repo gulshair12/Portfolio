@@ -24,49 +24,79 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     icon: Code2,
-    title: 'Frontend Core',
-    skills: ['React & Next.js', 'TypeScript', 'JavaScript (ES6+)', 'HTML5 & CSS3'],
-    color: 'from-blue-500 to-indigo-500',
+    title: 'Frontend Engineering',
+    skills: [
+      'React.js',
+      'Next.js',
+      'TypeScript',
+      'JavaScript (ES6+)'
+    ], color: 'from-blue-500 to-indigo-500',
   },
   {
     icon: Palette,
-    title: 'Styling & UI',
-    skills: ['Tailwind CSS', 'Styled Components (SCSS) ', 'Material UI', 'Shadcn/ui'],
+    title: 'UI Systems & Styling',
+    skills: [
+      'Tailwind CSS',
+      'Material UI',
+      'Shadcn/ui',
+      'Responsive Design'
+    ],
     color: 'from-pink-500 to-rose-500',
   },
   {
     icon: Database,
-    title: 'State & Data',
-    skills: ['Redux-toolkit & Zustand', 'Tanstack Query', 'REST APIs'],
+    title: 'State & Data Management',
+    skills: [
+      'Redux Toolkit',
+      'Zustand',
+      'TanStack Query',
+      'REST APIs'
+    ],
     color: 'from-green-500 to-emerald-500',
   },
   {
     icon: Zap,
-    title: 'Performance',
-    skills: ['Core Web Vitals', 'Lazy Loading', 'Code Splitting', 'Caching Strategies'],
+    title: 'Performance Optimization',
+    skills: [
+      'Core Web Vitals',
+      'Code Splitting',
+      'Lazy Loading',
+      'Rendering Optimization'
+    ],
     color: 'from-yellow-500 to-orange-500',
   },
   {
     icon: Wrench,
-    title: 'Developer Experience',
-    skills: ['Testing ', 'CI/CD Pipelines', 'Code Quality', 'Documentation'],
+    title: 'Testing & Developer Workflows',
+    skills: [
+      'Jest',
+      'React Testing Library',
+      'CI/CD Pipelines',
+      'Code Quality'
+    ],
     color: 'from-cyan-500 to-blue-500',
   },
   {
     icon: Layers,
-    title: 'Architecture',
-    skills: ['Design Systems', 'Component Libraries', 'Micro-frontends', 'Module Federation'],
+    title: 'Architecture & Scalability',
+    skills: [
+      'SSR & SSG',
+      'Reusable Component Systems',
+      'Frontend Architecture',
+      'Scalable UI Workflows'
+    ],
     color: 'from-purple-500 to-violet-500',
   },
 ];
 
 const additionalTools = [
-  { icon: GitBranch, name: 'Git, GitHub & Gitlab' },
-  { icon: Globe, name: 'Web APIs' },
-  { icon: Cpu, name: 'Build Tools' },
-  { icon: Layout, name: 'Figma' },
-  { icon: Sparkles, name: 'Animations' },
+  { icon: GitBranch, name: 'Git, GitHub & GitLab' },
+  { icon: Globe, name: 'REST API Integration' },
+  { icon: Cpu, name: 'Vercel & Docker' },
+  { icon: Layout, name: 'Figma Collaboration' },
+  { icon: Sparkles, name: 'AI-Assisted Development' },
 ];
+
 
 const Skills = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -150,20 +180,19 @@ const Skills = () => {
           className="text-center mb-16"
         >
           <motion.span variants={itemVariants} className="section-label mb-4 block">
-            Expertise
+            Engineering Expertise
           </motion.span>
           <motion.h2
             variants={itemVariants}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-portfolio-text mb-6"
           >
-            Skills & <span className="text-gradient">Technologies</span>
+            Frontend Engineering & <span className="text-gradient">Modern Web Systems</span>
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-lg text-portfolio-muted max-w-2xl mx-auto"
+            className="text-lg text-portfolio-muted max-w-4xl mx-auto"
           >
-            A comprehensive toolkit built over 3+ years of crafting digital experiences.
-            From frontend fundamentals to advanced architectural patterns.
+            Focused on building scalable frontend applications, maintainable architectures, and production-ready user experiences using modern React ecosystems and frontend engineering practices.
           </motion.p>
         </motion.div>
 
@@ -265,7 +294,7 @@ const Skills = () => {
           <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full glass">
             <Sparkles className="w-5 h-5 text-portfolio-cyan" />
             <span className="text-portfolio-text">
-              <strong className="text-gradient">3+ Years</strong> of continuous learning and growth
+              <strong className="text-gradient">4+ Years Building Production Frontend Applications</strong>
             </span>
           </div>
         </motion.div>
