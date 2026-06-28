@@ -1,6 +1,6 @@
-import { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
-import { Download, Code2, Rocket } from 'lucide-react';
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { Download, Code2, Rocket } from "lucide-react";
 
 const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -30,8 +30,8 @@ const About = () => {
   };
 
   const stats = [
-    { icon: Code2, value: '4+', label: 'Years Experience' },
-    { icon: Rocket, value: '10+', label: 'Projects Delivered' },
+    { icon: Code2, value: "4+", label: "Years Experience" },
+    { icon: Rocket, value: "10+", label: "Projects Delivered" },
   ];
 
   return (
@@ -45,15 +45,16 @@ const About = () => {
         <div
           className="absolute top-0 left-1/4 w-px h-full opacity-20"
           style={{
-            background: 'linear-gradient(to bottom, transparent, #6366F1, transparent)',
-            transform: 'rotate(15deg)',
-            transformOrigin: 'top center',
+            background:
+              "linear-gradient(to bottom, transparent, #6366F1, transparent)",
+            transform: "rotate(15deg)",
+            transformOrigin: "top center",
           }}
         />
         <motion.div
           className="absolute top-1/4 right-[10%] w-64 h-64 rounded-full opacity-5"
           style={{
-            background: 'radial-gradient(circle, #6366F1 0%, transparent 70%)',
+            background: "radial-gradient(circle, #6366F1 0%, transparent 70%)",
           }}
           animate={{
             scale: [1, 1.2, 1],
@@ -75,22 +76,37 @@ const About = () => {
             <motion.div variants={itemVariants}>
               <span className="section-label mb-4 block">About Me</span>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-portfolio-text leading-tight">
-                Building Scalable{' '}
+                Building Scalable{" "}
                 <span className="text-gradient">Frontend Systems</span>
               </h2>
             </motion.div>
 
             <div className="space-y-6 text-portfolio-muted leading-relaxed">
               <motion.p variants={itemVariants} className="text-lg">
-                I'm a <strong className="text-portfolio-text">Frontend Engineer</strong> with 4 years of experience building scalable web applications using React.js, Next.js, and TypeScript. My experience includes SaaS platforms, CMS systems, workflow-driven applications, and complex frontend architectures focused on performance and maintainability.
+                I'm a{" "}
+                <strong className="text-portfolio-text">
+                  Frontend Engineer
+                </strong>{" "}
+                with 4 years of experience building scalable web applications
+                using React.js, Next.js, and TypeScript. My experience includes
+                SaaS platforms, CMS systems, workflow-driven applications, and
+                complex frontend architectures focused on performance and
+                maintainability.
               </motion.p>
 
               <motion.p variants={itemVariants} className="text-lg">
-                I specialize in frontend architecture, reusable component systems, advanced state management, authentication workflows, and building responsive user experiences for production-scale applications. I enjoy solving complex UI problems while keeping systems maintainable and scalable as products grow.
+                I specialize in frontend architecture, reusable component
+                systems, advanced state management, authentication workflows,
+                and building responsive user experiences for production-scale
+                applications. I enjoy solving complex UI problems while keeping
+                systems maintainable and scalable as products grow.
               </motion.p>
 
               <motion.p variants={itemVariants} className="text-lg">
-                I actively explore modern engineering workflows including AI-assisted development, frontend system design, and performance optimization to improve development efficiency and deliver high-quality user experiences across modern web applications.
+                I actively explore modern engineering workflows including
+                AI-assisted development, frontend system design, and performance
+                optimization to improve development efficiency and deliver
+                high-quality user experiences across modern web applications.
               </motion.p>
             </div>
 
@@ -109,20 +125,22 @@ const About = () => {
           {/* Right Column - Visual & Stats */}
           <div className="space-y-8">
             {/* Abstract Visual */}
-            <motion.div
-              variants={itemVariants}
-              className="relative"
-            >
+            <motion.div variants={itemVariants} className="relative">
               <div className="relative aspect-square max-w-md mx-auto">
                 {/* Rotating border */}
                 <motion.div
                   className="absolute inset-0 rounded-2xl"
                   style={{
-                    background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(34, 211, 238, 0.3))',
-                    padding: '2px',
+                    background:
+                      "linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(34, 211, 238, 0.3))",
+                    padding: "2px",
                   }}
                   animate={{ rotate: [0, 360] }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                  transition={{
+                    duration: 20,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
                 >
                   <div className="w-full h-full rounded-2xl bg-portfolio-bg" />
                 </motion.div>
@@ -134,9 +152,9 @@ const About = () => {
                     <div className="p-6 font-mono text-xs text-portfolio-indigo space-y-2">
                       <div>{`const engineer = {`}</div>
                       <div className="pl-4">{`name: 'Muhammad Gulshair',`}</div>
-                      <div className="pl-4">{`role: 'Senior Frontend Engineer',`}</div>
-                      <div className="pl-4">{`passion: 'Building UI',`}</div>
-                      <div className="pl-4">{`stack: ['React', 'TS'],`}</div>
+                      <div className="pl-4">{`role: 'Frontend Engineer',`}</div>
+                      <div className="pl-4">{`passion: 'Building Frontend Solutions',`}</div>
+                      <div className="pl-4">{`stack: ['Next.js', 'React', 'Typescript'],`}</div>
                       <div>{`};`}</div>
                     </div>
                   </div>
@@ -146,9 +164,9 @@ const About = () => {
                     className="relative z-10 w-24 h-24 rounded-2xl bg-gradient-to-br from-portfolio-indigo to-portfolio-cyan flex items-center justify-center"
                     animate={{
                       boxShadow: [
-                        '0 0 20px rgba(99, 102, 241, 0.3)',
-                        '0 0 40px rgba(99, 102, 241, 0.5)',
-                        '0 0 20px rgba(99, 102, 241, 0.3)',
+                        "0 0 20px rgba(99, 102, 241, 0.3)",
+                        "0 0 40px rgba(99, 102, 241, 0.5)",
+                        "0 0 20px rgba(99, 102, 241, 0.3)",
                       ],
                     }}
                     transition={{ duration: 3, repeat: Infinity }}
@@ -171,7 +189,9 @@ const About = () => {
                   animate={{ y: [0, 10, 0] }}
                   transition={{ duration: 5, repeat: Infinity, delay: 1 }}
                 >
-                  <span className="text-2xl font-bold text-gradient ">React</span>
+                  <span className="text-2xl font-bold text-gradient ">
+                    React
+                  </span>
                 </motion.div>
               </div>
             </motion.div>
