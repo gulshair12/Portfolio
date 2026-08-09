@@ -18,7 +18,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             className="flex items-center gap-2 text-portfolio-muted text-sm"
           >
-            <span>&copy; {new Date().getFullYear()} Muhammad Gulshair.</span>
+            <span>&copy; {new Date().getFullYear()} Muhammad Gulshair — Full Stack Engineer (MERN Stack).</span>
             <span className="flex items-center gap-1">
               Made with <Heart className="w-3 h-3 text-red-400 fill-red-400" />
             </span>

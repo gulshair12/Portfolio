@@ -1,6 +1,6 @@
-import { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { ChevronDown, ArrowRight } from 'lucide-react';
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { ChevronDown, ArrowRight } from "lucide-react";
 
 const FloatingShape = ({
   className,
@@ -32,7 +32,7 @@ const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start start", "end start"]
+    offset: ["start start", "end start"],
   });
 
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
@@ -42,7 +42,7 @@ const Hero = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -83,7 +83,7 @@ const Hero = () => {
   };
 
   const name = "Muhammad Gulshair";
-  const role = "Frontend Engineer";
+  const role = "Full-Stack Engineer ";
 
   return (
     <section
@@ -106,7 +106,8 @@ const Hero = () => {
         <motion.div
           className="absolute inset-0"
           style={{
-            background: 'radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.05) 0%, transparent 50%)',
+            background:
+              "radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.05) 0%, transparent 50%)",
           }}
           animate={{
             scale: [1, 1.2, 1],
@@ -179,7 +180,7 @@ const Hero = () => {
             linear-gradient(rgba(99, 102, 241, 0.5) 1px, transparent 1px),
             linear-gradient(90deg, rgba(99, 102, 241, 0.5) 1px, transparent 1px)
           `,
-          backgroundSize: '60px 60px',
+          backgroundSize: "60px 60px",
         }}
       />
 
@@ -199,34 +200,35 @@ const Hero = () => {
             variants={itemVariants}
           >
             <span className="inline-flex flex-wrap justify-center">
-              {name.split('').map((char, i) => (
+              {name.split("").map((char, i) => (
                 <motion.span
                   key={i}
                   custom={i}
                   variants={letterVariants}
                   initial="hidden"
                   animate="visible"
-                  className={char === ' ' ? 'mr-4' : 'text-gradient'}
+                  className={char === " " ? "mr-4" : "text-gradient"}
                 >
-                  {char === ' ' ? '\u00A0' : char}
+                  {char === " " ? "\u00A0" : char}
                 </motion.span>
               ))}
             </span>
           </motion.h1>
 
           {/* Role with staggered animation */}
-          <motion.div
-            className="overflow-hidden mb-8"
-            variants={itemVariants}
-          >
+          <motion.div className="overflow-hidden mb-8" variants={itemVariants}>
             <motion.p
               className="text-xl sm:text-2xl md:text-3xl font-medium text-portfolio-text"
               initial={{ y: 40 }}
               animate={{ y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] as const }}
+              transition={{
+                duration: 0.8,
+                delay: 0.6,
+                ease: [0.16, 1, 0.3, 1] as const,
+              }}
             >
               <span className="inline-flex flex-wrap justify-center">
-                {role.split('').map((char, i) => (
+                {role.split("").map((char, i) => (
                   <motion.span
                     key={i}
                     initial={{ opacity: 0, y: 30 }}
@@ -236,9 +238,9 @@ const Hero = () => {
                       delay: 0.7 + i * 0.02,
                       ease: [0.68, -0.55, 0.265, 1.55] as const,
                     }}
-                    className={char === ' ' ? 'mr-2' : ''}
+                    className={char === " " ? "mr-2" : ""}
                   >
-                    {char === ' ' ? '\u00A0' : char}
+                    {char === " " ? "\u00A0" : char}
                   </motion.span>
                 ))}
               </span>
@@ -248,14 +250,17 @@ const Hero = () => {
           {/* Tagline */}
           <motion.p
             className="text-base sm:text-lg md:text-xl text-portfolio-muted max-w-4xl mx-auto mb-12 leading-relaxed"
-            initial={{ opacity: 0, filter: 'blur(10px)' }}
-            animate={{ opacity: 1, filter: 'blur(0px)' }}
-            transition={{ duration: 0.7, delay: 1, ease: [0.4, 0, 0.2, 1] as const }}
+            initial={{ opacity: 0, filter: "blur(10px)" }}
+            animate={{ opacity: 1, filter: "blur(0px)" }}
+            transition={{
+              duration: 0.7,
+              delay: 1,
+              ease: [0.4, 0, 0.2, 1] as const,
+            }}
           >
-            Frontend Engineer specializing in scalable React.js and Next.js applications, modern frontend architecture, and production-ready user experiences.
-            <br />
-            <br />
-            Currently building complex SaaS platforms, workflow-driven systems, and performant frontend applications using TypeScript and AI-assisted development workflows.
+            Full Stack Engineer building modern web applications across the
+            frontend and backend. I focus on creating thoughtful, scalable
+            products that are simple to use, reliable, and built to grow.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -264,7 +269,7 @@ const Hero = () => {
             variants={itemVariants}
           >
             <motion.button
-              onClick={() => scrollToSection('projects')}
+              onClick={() => scrollToSection("projects")}
               className="btn-primary flex items-center gap-2 group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
@@ -273,7 +278,7 @@ const Hero = () => {
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </motion.button>
             <motion.button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection("contact")}
               className="btn-secondary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
@@ -291,7 +296,9 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.8, duration: 0.5 }}
       >
-        <span className="text-xs text-portfolio-muted tracking-wider uppercase">Scroll</span>
+        <span className="text-xs text-portfolio-muted tracking-wider uppercase">
+          Scroll
+        </span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}

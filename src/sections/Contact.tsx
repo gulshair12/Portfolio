@@ -92,8 +92,8 @@ const Contact = () => {
             variants={itemVariants}
             className="text-lg text-portfolio-muted max-w-2xl mx-auto"
           >
-            Have a project in mind or want to discuss opportunities?
-            I'd love to hear from you. Let's build something amazing.
+            Have a product idea, engineering challenge, or full-stack opportunity?
+            I'd love to hear from you. Let's connect and build something exceptional.
           </motion.p>
         </motion.div>
 

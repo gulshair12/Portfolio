@@ -1,22 +1,22 @@
-import { useEffect } from 'react';
-import './App.css';
-import Navigation from './sections/Navigation';
-import Hero from './sections/Hero';
-import About from './sections/About';
-import Skills from './sections/Skills';
-import Projects from './sections/Projects';
-import Experience from './sections/Experience';
-import EngineeringPrinciples from './sections/EngineeringPrinciples';
-import Contact from './sections/Contact';
-import Footer from './sections/Footer';
+import { useEffect } from "react";
+import "./App.css";
+import Navigation from "./sections/Navigation";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Experience from "./sections/Experience";
+import EngineeringPrinciples from "./sections/EngineeringPrinciples";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 
 function App() {
   useEffect(() => {
     // Smooth scroll polyfill for older browsers
-    document.documentElement.style.scrollBehavior = 'smooth';
-    
+    document.documentElement.style.scrollBehavior = "smooth";
+
     return () => {
-      document.documentElement.style.scrollBehavior = 'auto';
+      document.documentElement.style.scrollBehavior = "auto";
     };
   }, []);
 
@@ -27,8 +27,8 @@ function App() {
         <Hero />
         <About />
         <Skills />
-        <Projects />
         <Experience />
+        <Projects />
         <EngineeringPrinciples />
         <Contact />
       </main>

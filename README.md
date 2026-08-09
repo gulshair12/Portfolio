@@ -1,6 +1,6 @@
-# Gulshair Portfolio
+# Muhammad Gulshair — Full Stack Engineer Portfolio
 
-A modern, responsive portfolio site built with React, TypeScript, Vite, Tailwind CSS, and Framer Motion. Single-page layout with smooth scrolling, section animations, and a dark theme.
+A modern, responsive portfolio site for a **Full Stack Engineer specializing in the MERN Stack (MongoDB, Express.js, React.js, Node.js)**. Built with React 19, TypeScript, Vite, Tailwind CSS, and Framer Motion. Single-page layout with smooth scrolling, section animations, and a dark theme.
 
 ---
 

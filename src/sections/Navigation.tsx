@@ -100,7 +100,7 @@ const Navigation = () => {
                 onClick={() => scrollToSection('#contact')}
                 className="px-4 py-2 rounded-lg bg-portfolio-indigo/10 text-portfolio-indigo text-sm font-medium hover:bg-portfolio-indigo/20 transition-colors"
               >
-                Hire Me
+                Get In Touch
               </button>
             </div>
 
@@ -170,7 +170,7 @@ const Navigation = () => {
                   onClick={() => scrollToSection('#contact')}
                   className="w-full btn-primary"
                 >
-                  Hire Me
+                  Get In Touch
                 </button>
               </motion.div>
             </motion.div>

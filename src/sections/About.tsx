@@ -76,8 +76,8 @@ const About = () => {
             <motion.div variants={itemVariants}>
               <span className="section-label mb-4 block">About Me</span>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-portfolio-text leading-tight">
-                Building Scalable{" "}
-                <span className="text-gradient">Frontend Systems</span>
+                Building{" "}
+                <span className="text-gradient">Full-Stack Applications</span>
               </h2>
             </motion.div>
 
@@ -85,28 +85,23 @@ const About = () => {
               <motion.p variants={itemVariants} className="text-lg">
                 I'm a{" "}
                 <strong className="text-portfolio-text">
-                  Frontend Engineer
+                  Full Stack Engineer
                 </strong>{" "}
-                with 4 years of experience building scalable web applications
-                using React.js, Next.js, and TypeScript. My experience includes
-                SaaS platforms, CMS systems, workflow-driven applications, and
-                complex frontend architectures focused on performance and
-                maintainability.
+                with 4 years of experience building modern web applications from
+                frontend to backend. My primary stack is MERN, with TypeScript
+                and Next.js for building reliable, scalable products.
               </motion.p>
 
               <motion.p variants={itemVariants} className="text-lg">
-                I specialize in frontend architecture, reusable component
-                systems, advanced state management, authentication workflows,
-                and building responsive user experiences for production-scale
-                applications. I enjoy solving complex UI problems while keeping
-                systems maintainable and scalable as products grow.
+                I enjoy working across the entire development process, from
+                designing the user experience and building APIs to working with
+                data, solving technical problems, and bringing features into
+                production.
               </motion.p>
 
               <motion.p variants={itemVariants} className="text-lg">
-                I actively explore modern engineering workflows including
-                AI-assisted development, frontend system design, and performance
-                optimization to improve development efficiency and deliver
-                high-quality user experiences across modern web applications.
+                I focus on writing clean, maintainable code and building
+                products that are fast, reliable, and easy to use.
               </motion.p>
             </div>
 
@@ -152,9 +147,9 @@ const About = () => {
                     <div className="p-6 font-mono text-xs text-portfolio-indigo space-y-2">
                       <div>{`const engineer = {`}</div>
                       <div className="pl-4">{`name: 'Muhammad Gulshair',`}</div>
-                      <div className="pl-4">{`role: 'Frontend Engineer',`}</div>
-                      <div className="pl-4">{`passion: 'Building Frontend Solutions',`}</div>
-                      <div className="pl-4">{`stack: ['Next.js', 'React', 'Typescript'],`}</div>
+                      <div className="pl-4">{`role: 'Full Stack Engineer',`}</div>
+                      <div className="pl-4">{`coreStack: 'MERN Stack',`}</div>
+                      <div className="pl-4">{`stack: ['MongoDB', 'Express', 'React', 'Node.js'],`}</div>
                       <div>{`};`}</div>
                     </div>
                   </div>
@@ -177,20 +172,22 @@ const About = () => {
 
                 {/* Floating elements */}
                 <motion.div
-                  className="absolute -top-4 -right-4 w-16 h-16 rounded-lg bg-portfolio-surface border border-portfolio-indigo/30 flex items-center justify-center"
+                  className="absolute -top-4 -right-4 px-3 py-2 rounded-lg bg-portfolio-surface border border-portfolio-indigo/30 flex items-center justify-center"
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 4, repeat: Infinity }}
                 >
-                  <span className="text-2xl font-bold text-gradient">TS</span>
+                  <span className="text-sm font-bold text-gradient">
+                    Node.js
+                  </span>
                 </motion.div>
 
                 <motion.div
-                  className="absolute -bottom-4 -left-4 w-24 h-16 rounded-lg bg-portfolio-surface border border-portfolio-cyan/30 flex items-center justify-center"
+                  className="absolute -bottom-4 -left-4 px-3 py-2 rounded-lg bg-portfolio-surface border border-portfolio-cyan/30 flex items-center justify-center"
                   animate={{ y: [0, 10, 0] }}
                   transition={{ duration: 5, repeat: Infinity, delay: 1 }}
                 >
-                  <span className="text-2xl font-bold text-gradient ">
-                    React
+                  <span className="text-sm font-bold text-gradient">
+                    Next.js
                   </span>
                 </motion.div>
               </div>
