@@ -5,7 +5,6 @@ import {
   Code2,
   Database,
   Layers,
-  Palette,
   Wrench,
   GitBranch,
   Cloud,
