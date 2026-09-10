@@ -196,10 +196,10 @@ const Hero = () => {
         >
           {/* Name with character animation */}
           <motion.h1
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-tight"
+            className="text-4xl sm:text-5xl lg:text-8xl font-bold mb-4 tracking-tight"
             variants={itemVariants}
           >
-            <span className="inline-flex flex-wrap justify-center">
+            <span className="inline-flex flex-wrap justify-center text-wrap">
               {name.split("").map((char, i) => (
                 <motion.span
                   key={i}
@@ -249,7 +249,7 @@ const Hero = () => {
 
           {/* Tagline */}
           <motion.p
-            className="text-base sm:text-lg md:text-xl text-portfolio-muted max-w-4xl mx-auto mb-12 leading-relaxed"
+            className="text-lg md:text-xl text-portfolio-muted max-w-4xl mx-auto mb-12 leading-relaxed"
             initial={{ opacity: 0, filter: "blur(10px)" }}
             animate={{ opacity: 1, filter: "blur(0px)" }}
             transition={{

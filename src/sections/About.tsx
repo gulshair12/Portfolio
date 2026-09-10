@@ -107,9 +107,9 @@ const About = () => {
 
             <motion.div variants={itemVariants}>
               <a
-                href="/Gulshair_Frontend_Resume.pdf"
+                href="/Gulshair_Full_Stack_Resume.pdf"
                 className="btn-secondary inline-flex items-center gap-2 group"
-                download="Gulshair_Frontend_Resume.pdf"
+                download="Gulshair_Full_Stack_Resume.pdf"
               >
                 <Download className="w-4 h-4 transition-transform group-hover:-translate-y-0.5" />
                 Download Resume

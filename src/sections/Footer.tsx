@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion';
-import { Heart, ArrowUp } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Heart, ArrowUp } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -18,13 +18,14 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             className="flex items-center gap-2 text-portfolio-muted text-sm"
           >
-            <span>&copy; {new Date().getFullYear()} Muhammad Gulshair — Full Stack Engineer (MERN Stack).</span>
+            <span>
+              &copy; {new Date().getFullYear()} Muhammad Gulshair — Full Stack
+              Engineer.
+            </span>
             <span className="flex items-center gap-1">
               Made with <Heart className="w-3 h-3 text-red-400 fill-red-400" />
             </span>
           </motion.div>
-
-
 
           {/* Back to Top */}
           <motion.button

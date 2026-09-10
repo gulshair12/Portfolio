@@ -100,6 +100,7 @@ const ProjectCard = ({
     <motion.a
       href={project.link}
       target="_blank"
+      id="projects"
       rel="noopener noreferrer"
       variants={itemVariants}
       className={`

@@ -109,7 +109,7 @@ const EngineeringPrinciples = () => {
   return (
     <section
       ref={sectionRef}
-      id="approach"
+      id="principles"
       className="relative py-24 sm:py-32 lg:py-40 overflow-hidden"
     >
       {/* Background */}
