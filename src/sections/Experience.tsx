@@ -32,26 +32,12 @@ const experiences: ExperienceItem[] = [
     role: "Front-end Developer",
     company: "Createex Inc.",
     location: "Lahore, Pakistan",
-    period: "2023 — 2025",
+    period: "2022 — 2025",
     type: "full-time",
     highlights: [
       "Built and maintained React-based web applications and CMS platforms used by thousands of daily users.",
       "Developed reusable UI components, integrated REST APIs, and worked closely with backend engineers to deliver application features.",
       "Collaborated with designers and product teams to improve usability, responsiveness, accessibility, and overall product quality.",
-    ],
-  },
-
-  {
-    id: 3,
-    role: "React.js Developer",
-    company: "Enigmatix (Pvt) Ltd",
-    location: "Bahawalpur, Pakistan",
-    period: "2022 — 2023",
-    type: "full-time",
-    highlights: [
-      "Built responsive web interfaces using React.js, JavaScript, and modern frontend development practices.",
-      "Integrated APIs, developed reusable components, and worked on forms, data handling, and application features.",
-      "Developed a strong foundation in production development, debugging, Git workflows, and collaborative software development.",
     ],
   },
 ];
@@ -151,7 +137,7 @@ const Experience = () => {
 
           <p className="text-lg text-portfolio-muted max-w-3xl mx-auto">
             Four years of building production web applications, growing from
-            frontend development into full-stack engineering.
+            frontend development into full stack engineering.
           </p>
         </motion.div>
 

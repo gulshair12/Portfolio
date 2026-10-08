@@ -1,16 +1,16 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import {
-  Server,
   Code2,
+  Palette,
+  Server,
   Database,
-  Layers,
-  Wrench,
-  GitBranch,
-  Cloud,
-  Figma,
-  Sparkles,
   TestTube,
+  Blocks,
+  Cloud,
+  GitBranch,
+  Wrench,
+  Sparkles,
 } from "lucide-react";
 
 interface SkillCategory {
@@ -22,49 +22,98 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    icon: Server,
-    title: "Core Stack",
-    skills: ["MongoDB", "Express.js", "React.js", "Node.js"],
-    color: "from-emerald-500 to-teal-500",
-  },
-  {
     icon: Code2,
     title: "Frontend",
-    skills: ["React.js", "Next.js", "TypeScript", "JavaScript"],
+    skills: [
+      "React.js",
+      "Next.js",
+      "JavaScript",
+      "Redux Toolkit",
+      "TanStack Query",
+    ],
     color: "from-purple-500 to-violet-500",
+  },
+  {
+    icon: Palette,
+    title: "UI & Styling",
+    skills: [
+      "Tailwind CSS",
+      "Material UI",
+      "HTML5",
+      "CSS3",
+      "Responsive Design",
+      "Accessibility (WCAG)",
+    ],
+    color: "from-pink-500 to-rose-500",
   },
   {
     icon: Server,
     title: "Backend & APIs",
-    skills: ["Node.js", "Express.js", "REST APIs", "Authentication"],
+    skills: [
+      "Node.js",
+      "Express.js",
+      "TypeScript",
+      "REST APIs",
+      "Authentication",
+    ],
     color: "from-blue-500 to-indigo-500",
   },
   {
     icon: Database,
-    title: "Database",
-    skills: ["MongoDB", "Mongoose", "Data Modeling", "Query Optimization"],
+    title: "Databases",
+    skills: [
+      "MongoDB",
+      "Mongoose",
+      "PostgreSQL",
+      "SQL",
+      "Supabase",
+      "Data Modeling",
+    ],
     color: "from-cyan-500 to-blue-500",
   },
   {
-    icon: Layers,
-    title: "State & UI",
-    skills: ["Redux Toolkit", "Zustand", "TanStack Query", "Tailwind CSS"],
-    color: "from-pink-500 to-rose-500",
+    icon: TestTube,
+    title: "Testing & Quality",
+    skills: [
+      "Jest",
+      "Vitest",
+      "React Testing Library",
+      "Playwright",
+      "ESLint",
+      "Prettier",
+    ],
+    color: "from-green-500 to-emerald-500",
+  },
+  {
+    icon: Blocks,
+    title: "Architecture & Performance",
+    skills: [
+      "SSR / CSR / SSG",
+      "Code Splitting",
+      "Lazy Loading",
+      "Webpack",
+      "Performance Optimization",
+    ],
+    color: "from-indigo-500 to-purple-500",
+  },
+  {
+    icon: Cloud,
+    title: "DevOps & Cloud",
+    skills: ["CI/CD", "GitHub Actions", "Docker", "AWS", "Vercel", "Netlify"],
+    color: "from-sky-500 to-cyan-500",
+  },
+  {
+    icon: GitBranch,
+    title: "Version Control & Collaboration",
+    skills: ["Git", "GitHub", "GitLab", "Jira", "Trello", "ClickUp"],
+    color: "from-teal-500 to-emerald-500",
   },
   {
     icon: Wrench,
-    title: "Tools & Workflow",
-    skills: ["Git & GitHub", "Jest", "Vercel", "Figma"],
+    title: "Tools & AI",
+    skills: ["VS Code", "Cursor", "Claude Code", "Postman", "Figma"],
     color: "from-amber-500 to-orange-500",
   },
-];
-
-const additionalTools = [
-  { icon: GitBranch, name: "Git & GitHub" },
-  { icon: TestTube, name: "Testing" },
-  { icon: Cloud, name: "Deployment" },
-  { icon: Figma, name: "Figma" },
-  { icon: Sparkles, name: "AI-Assisted Development" },
 ];
 
 const Skills = () => {
@@ -240,56 +289,6 @@ const Skills = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Additional Tools */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="text-center"
-        >
-          <motion.h3
-            variants={itemVariants}
-            className="text-xl font-semibold text-portfolio-text mb-6"
-          >
-            Tools I Work With
-          </motion.h3>
-
-          <motion.div
-            variants={itemVariants}
-            className="flex flex-wrap justify-center gap-3"
-          >
-            {additionalTools.map((tool, index) => (
-              <motion.div
-                key={tool.name}
-                initial={{
-                  opacity: 0,
-                  scale: 0.8,
-                }}
-                animate={
-                  isInView
-                    ? {
-                        opacity: 1,
-                        scale: 1,
-                      }
-                    : {}
-                }
-                transition={{
-                  delay: 0.8 + index * 0.1,
-                  duration: 0.4,
-                }}
-                whileHover={{
-                  scale: 1.05,
-                  y: -2,
-                }}
-                className="flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-portfolio-muted hover:text-portfolio-text hover:border-portfolio-indigo/50 transition-colors"
-              >
-                <tool.icon className="w-4 h-4 text-portfolio-indigo" />
-                {tool.name}
-              </motion.div>
-            ))}
-          </motion.div>
-        </motion.div>
 
         {/* Experience Badge */}
         <motion.div

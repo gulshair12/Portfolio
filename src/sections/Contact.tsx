@@ -92,7 +92,8 @@ const Contact = () => {
             variants={itemVariants}
             className="text-lg text-portfolio-muted max-w-2xl mx-auto"
           >
-            Have a product idea, engineering challenge, or full-stack opportunity?
+            Have a product idea, engineering challenge, or full stack
+            opportunity?
             I'd love to hear from you. Let's connect and build something exceptional.
           </motion.p>
         </motion.div>

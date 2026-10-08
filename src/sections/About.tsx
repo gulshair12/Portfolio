@@ -77,7 +77,7 @@ const About = () => {
               <span className="section-label mb-4 block">About Me</span>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-portfolio-text leading-tight">
                 Building{" "}
-                <span className="text-gradient">Full-Stack Applications</span>
+                <span className="text-gradient">Full Stack Applications</span>
               </h2>
             </motion.div>
 
@@ -87,21 +87,24 @@ const About = () => {
                 <strong className="text-portfolio-text">
                   Full Stack Engineer
                 </strong>{" "}
-                with 4 years of experience building modern web applications from
-                frontend to backend. My primary stack is MERN, with TypeScript
-                and Next.js for building reliable, scalable products.
+                with four years of experience building products people open
+                every day — mostly with the MERN stack, Next.js, and TypeScript,
+                from the first screen down to the API and the data behind it.
               </motion.p>
 
               <motion.p variants={itemVariants} className="text-lg">
-                I enjoy working across the entire development process, from
-                designing the user experience and building APIs to working with
-                data, solving technical problems, and bringing features into
-                production.
+                Most of that time went into SaaS platforms and CMS tools used by
+                thousands of people daily, where a slow screen or an unclear
+                flow gets noticed right away. It shaped how I build: attentive
+                to the details users feel, and careful about the structure
+                underneath, so the next feature is easier than the last.
               </motion.p>
 
               <motion.p variants={itemVariants} className="text-lg">
-                I focus on writing clean, maintainable code and building
-                products that are fast, reliable, and easy to use.
+                I'm at my best on small teams, taking a feature from first
+                sketch to production — thinking through the product decision,
+                building it end to end, and refining it until it feels
+                effortless to use.
               </motion.p>
             </div>
 

@@ -83,7 +83,7 @@ const Hero = () => {
   };
 
   const name = "Muhammad Gulshair";
-  const role = "Full-Stack Engineer ";
+  const role = "FullStack Engineer ";
 
   return (
     <section
